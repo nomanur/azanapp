@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="h-full min-h-screen">
     <div class="text-center">
-      <button class="text-center bg-teal-500 px-6 mr-3 py-2 rounded my-4 hover:bg-orange-300 hover:text-white inline-block" @click="azantime(true)">click</button>
+      <button class="text-center bg-teal-500 px-6 mr-3 py-2 rounded my-4 hover:bg-orange-300 hover:text-white inline-block" @click="azantime(true)">Click</button>
       <button class="text-center bg-teal-500 px-6 py-2 rounded my-4 hover:bg-orange-300 hover:text-white inline-block" @click="azantime(false)">Today</button>
       <p class="text-white font-bold">{{error}}</p>
       <hr>
