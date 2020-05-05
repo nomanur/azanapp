@@ -106,7 +106,7 @@ export default {
     azantime(cause){
       var that = this
       this.loading = true
-      axios.get(`http://api.aladhan.com/v1/calendarByCity?city=${that.city}&country=${that.country}&method=2&month=${that.month}&year=${that.year}`)
+      axios.get(`https://api.aladhan.com/v1/calendarByCity?city=${that.city}&country=${that.country}&method=2&month=${that.month}&year=${that.year}`)
       .then(function(res){
         that.loading = false
         that.date = res.data.data
