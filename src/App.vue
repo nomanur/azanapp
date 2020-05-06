@@ -5,7 +5,7 @@
       <button class="text-center bg-teal-500 px-6 py-2 rounded my-4 hover:bg-orange-300 hover:text-white inline-block" @click="azantime(false)">Today</button>
       <p class="text-white font-bold">{{error}}</p>
       <hr>
-      <div class="w-1/2 sm:w-1/6 p-4 text-center mx-auto flex justify-between flex-col">
+      <div class="w-1/2 sm:w-1/4 p-4 text-center mx-auto flex justify-between flex-col">
         <h2 class="text-white">City</h2><input required type="text" class="w-full" placeholder="city" v-model="city">
         <br>
         <h2 class="text-white">Country</h2><input required type="text" placeholder="country" v-model="country">
