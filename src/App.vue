@@ -5,7 +5,7 @@
       <button class="text-center bg-teal-500 px-6 py-2 rounded my-4 hover:bg-orange-300 hover:text-white inline-block" @click="azantime(false)">Today</button>
       <p class="text-white font-bold">{{error}}</p>
       <hr>
-      <div class="w-1/6 p-4 text-center mx-auto flex justify-between flex-col">
+      <div class="w-1/2 sm:w-1/6 p-4 text-center mx-auto flex justify-between flex-col">
         <h2 class="text-white">City</h2><input required type="text" class="w-full" placeholder="city" v-model="city">
         <br>
         <h2 class="text-white">Country</h2><input required type="text" placeholder="country" v-model="country">
@@ -27,12 +27,12 @@
       <br>
       <p v-if="loading">Loading----</p>
       <div class="flex flex-wrap p-4 justify-center" v-if="!loading">
-        <div class="bg-white w-1/4 p-4 m-2"  v-for="(result, index) in today" :key=index>
+        <div class="bg-white w-full sm:w-1/4 p-4 m-2"  v-for="(result, index) in today" :key=index>
         <div class="m-2">
           <div>Date:{{result.date.readable}}</div>
         <div>Hizri Date: {{result.date.hijri.date}}</div>
         <div>Azan time</div>
-        <div class="flex">
+        <div class="flex flex-wrap">
           <div class="w/5 flex-grow border">
           <h2>fajr</h2>
           <p>{{result.timings.Fajr}}</p>
